@@ -1,0 +1,45 @@
+.index {
+  background-color: rgba(12, 12, 12, 1);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .muyuimage {
+    width: 500px;
+    height: 500px;
+    transition: 0.1s all ease-in-out;
+  }
+
+  .small {
+    transform: scale(0.9);
+  }
+
+  .text {
+    color: #ffffff;
+    position: absolute;
+    opacity: 0;
+    animation: move 1s;
+  }
+
+  .text-div {
+    height: 200px;
+    width: 200px;
+    position: relative;
+  }
+
+  @keyframes move {
+    from {
+      top: 100px;
+      opacity: 1;
+    }
+    to {
+      top: 0;
+      opacity: 0;
+    }
+  }
+
+  .total-text {
+    color: #ffffff;
+  }
+}
